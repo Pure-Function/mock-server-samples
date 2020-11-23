@@ -1,0 +1,9 @@
+{
+    "featureId": "1",
+    "version": "v1",
+    "features": [
+        "Feature 1",
+        "Feature 2",
+        "Feature 3"
+    ]
+}

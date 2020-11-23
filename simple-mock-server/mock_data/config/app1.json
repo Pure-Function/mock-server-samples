@@ -1,0 +1,84 @@
+{
+    "pathSettings": {
+        "/app1/": {
+            "idName": "id",
+            "response": "/app1"
+        },
+        "/app1/user": {
+            "idName": "userId",
+            "response": "/app1/user"
+        },
+        "/app1/inventory/search": {
+            "response": "/app1/inventory",
+            "requestType": "REST_PLURAL"
+        },
+        "/app1/inventory/:itemId": {
+            "response": "/app1/inventory"
+        },
+        "/app1/inventory/:itemId/ratings/search": {
+            "response": "/app1/inventory/ratings",
+            "requestType": "REST_PLURAL"
+        },
+        "/app1/inventory/:itemId/ratings/:ratingId": {
+            "response": "/app1/inventory/ratings"
+        },
+        "/app1/inventory/:itemId/features/search": {
+            "response": "/app1/inventory/features",
+            "requestType": "REST_PLURAL"
+        },
+        "/app1/inventory/:itemId/features": {
+            "idName": "featureId",
+            "response": "/app1/inventory/features"
+        },
+        "/app1/user/search": {
+            "idName": "userId",
+            "response": ["/app1/user"],
+            "requestType": "REST_PLURAL"
+        },
+        "/app1/user/admin": {
+            "idName": "userId",
+            "response": "/app1/user/admin1.json"
+        },
+        "/app1/user/validate_user": {
+            "idName": "userId",
+            "response": "/app1/validate_user.json",
+            "requestType": "REST_FETCH"
+        },
+        "/app1/user/authorize": {
+            "idName": "userId",
+            "statusCode": 403,
+            "response": "User doesn't have persmissions.",
+            "requestType": "REST_ERROR"
+        },
+        "/app1/oauth2/access-resource": {
+            "idName": "userId",
+            "statusCode": 403,
+            "requestType": "REST_ERROR",
+            "response": "method1"
+        },
+        "/app1/user/profile-download": {
+            "idName": "userId",
+            "statusCode": 403,
+            "response": "/app1/user/profile/sample-profile.pdf",
+            "requestType": "FILE_DOWNLOAD"
+        },
+        "/app1/user/profile-download-dynmic": {
+            "idName": "userId",
+            "statusCode": 400,
+            "response": ["/app1/user/profile"],
+            "requestType": "FILE_DOWNLOAD"
+        },
+        "/app1/user/profile-report": {
+            "idName": "userId",
+            "statusCode": 400,
+            "response": "/app1/user/profile/sample-profile.pdf",
+            "requestType": "FILE_VIEW"
+        },
+        "/app1/user/doc-upload": {
+            "idName": "file",
+            "statusCode": 400,
+            "response": "/app1/user/docs",
+            "requestType": "FILE_UPLOAD"
+        }
+    }
+}

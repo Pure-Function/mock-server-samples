@@ -1,0 +1,12 @@
+{
+    "accessToken": {
+        "id": "abc-def",
+        "type": "ACCESS",
+        "expiration-time": "2020-10-14 20:21:12 PM UTC"
+    },
+    "refreshToken": {
+        "id": "abc-def",
+        "type": "REFRESH",
+        "expiration-time": "2020-10-15 20:21:12 PM UTC"
+    }
+}
