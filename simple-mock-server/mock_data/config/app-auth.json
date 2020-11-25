@@ -1,0 +1,14 @@
+{
+    "pathSettings": {
+        "/oauth/authorize": {
+            "idName": "userId",
+            "statusCode": 200,
+            "response": "/user_token.json"
+        },
+        "/oauth/access-resource": {
+            "idName": "userId",
+            "statusCode": 403,
+            "response": "/access-error.json"
+        }
+    }
+}

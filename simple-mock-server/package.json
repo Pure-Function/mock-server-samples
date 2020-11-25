@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
+    "start": "node .",
+    "dev:server-debug": "node --inspect=5858 index.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,7 @@
   },
   "homepage": "https://github.com/Pure-Function/mock-server-samples#readme",
   "dependencies": {
-    "@funq/mock-server": "0.0.1"
+    "@funq/mock-server": "0.0.2"
   },
   "type": "module"
 }
