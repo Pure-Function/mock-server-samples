@@ -1,0 +1,26 @@
+{
+    "pathSettings": {
+        "/inventory/search": {
+            "response": "/inventory",
+            "requestType": "REST_PLURAL"
+        },
+        "/inventory/:itemId": {
+            "response": "/inventory"
+        },
+        "/inventory/:itemId/ratings/search": {
+            "response": "/inventory/ratings",
+            "requestType": "REST_PLURAL"
+        },
+        "/inventory/:itemId/ratings/:ratingId": {
+            "response": "/inventory/ratings"
+        },
+        "/inventory/:itemId/features/search": {
+            "response": "/inventory/features",
+            "requestType": "REST_PLURAL"
+        },
+        "/inventory/:itemId/features": {
+            "idName": "featureId",
+            "response": "/inventory/features"
+        }
+    }
+}

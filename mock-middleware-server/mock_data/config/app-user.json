@@ -1,0 +1,42 @@
+{
+    "pathSettings": {
+        "/user": {
+            "idName": "userId",
+            "response": "/user"
+        },
+        "/user/search": {
+            "idName": "userId",
+            "response": ["/user"],
+            "requestType": "REST_PLURAL"
+        },
+        "/user/admin": {
+            "idName": "userId",
+            "response": "/user/admin1.json"
+        },
+        "/user/validate_user": {
+            "idName": "userId",
+            "response": "/validate_user.json",
+            "requestType": "REST_FETCH"
+        },
+        "/user/profile-download": {
+            "requestType": "FILE_DOWNLOAD",
+            "idName": "userId",
+            "statusCode": 201,
+            "response": "/user/profile/sample-profile.pdf"
+        },
+        "/user/profile-download-dynmic": {
+            "requestType": "FILE_DOWNLOAD",
+            "idName": "userId",
+            "response": ["/user/profile"]
+        },
+        "/user/profile-report": {
+            "requestType": "FILE_VIEW",
+            "response": "/user/profile/sample-profile.pdf"
+        },
+        "/user/doc-upload": {
+            "requestType": "FILE_UPLOAD",
+            "idName": "file",
+            "response": "/user/docs"
+        }
+    }
+}

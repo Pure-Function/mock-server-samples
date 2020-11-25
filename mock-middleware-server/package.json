@@ -1,5 +1,5 @@
 {
-  "name": "simple-mock-server",
+  "name": "mock-middleware-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,8 @@
   },
   "keywords": [
     "@funq/mock-server",
-    "simple mock server sample",
+    "mock server sample",
+    "mock middleware sample",
     "open-api",
     "file-upload",
     "file-download",
@@ -27,7 +28,7 @@
   },
   "homepage": "https://github.com/Pure-Function/mock-server-samples#readme",
   "dependencies": {
-    "@funq/mock-server": "0.0.5"
+    "@funq/mock-server": "0.0.2"
   },
   "type": "module"
 }
