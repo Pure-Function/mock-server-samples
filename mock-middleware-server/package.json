@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/Pure-Function/mock-server-samples#readme",
   "dependencies": {
-    "@funq/mock-server": "0.0.2"
+    "@funq/mock-server": "1.0.0"
   },
   "type": "module"
 }
